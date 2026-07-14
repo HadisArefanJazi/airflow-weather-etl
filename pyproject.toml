@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airflow-weather-etl"
+version = "0.1.0"
+description = "Apache Airflow ETL pipeline for daily Open-Meteo weather data."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Hadis Arefan Jazi"}]
+dependencies = [
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4,<8.0",
+    "requests-mock>=1.11",
+]
+airflow = [
+    "apache-airflow>=2.8,<3.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
