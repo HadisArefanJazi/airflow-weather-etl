@@ -171,11 +171,4 @@ airflow-weather-etl/
 ├── LICENSE
 └── pyproject.toml
 ```
-
-## Limitations
-
-- The pipeline uses Open-Meteo current weather only.
-- Output is file-based CSV storage, not a database.
-- Duplicate handling is based on the generated `run` field.
-- Docker Compose uses local Airflow services for development, not production deployment.
-- No dashboards, alerts, cloud deployment, or external warehouse integration are included.
+ 
