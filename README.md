@@ -4,7 +4,7 @@ Apache Airflow ETL pipeline that extracts current New York weather from the Open
 
 ## Project Overview
 
-The project keeps the original ETL behavior focused on the configured New York location:
+The default configuration uses New York City:
 
 - City: `New York`
 - Latitude: `40.7128`

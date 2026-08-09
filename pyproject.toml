@@ -9,7 +9,7 @@ description = "Apache Airflow ETL pipeline for daily Open-Meteo weather data."
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
-authors = [{name = "Hadis Arefan Jazi"}]
+authors = [{name = "Hadis Arefanjazi"}]
 dependencies = [
     "requests>=2.31",
 ]
